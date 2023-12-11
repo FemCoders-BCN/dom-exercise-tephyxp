@@ -1,148 +1,154 @@
 * {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.product-description{
+  display: block;
+  padding-top:1em ;
+  background-color: #62C356;
+}
+
+.product-image{
+  display: flex;
+  justify-content: center;
+  margin-top:1em;
+  padding: 0;
+}
+.product-image img {
+  max-width: 100%;
+  max-height: 100%; 
+  width: 24em; 
+  height: 13em;
+}
+.container{
+  padding: 1.2em 1.5em;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0;
+}
+h3 {
+  display: inline-block;
+  font-size: 1.17em;
+  font-weight: bold;
+  padding: 0.1em 0.4em; 
+  background-color: rgb(149, 141, 141); 
+  border-radius: 5px;
+}
+
+
+
+h1{
+  display: block;
+  font-size: 1.85em;
+  margin: 0.3em 0;
+  font-weight: bold;
+  color: white;
+}
+
+p {
+  display: block;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: white;
+}
+.icon{
+  font-size: 1em;
+  color: black;
+}
+
+.stars .fa-solid.fa-star {
+  color: yellow;
+  font-size: 1em;
   }
-  
-  body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-y: hidden;
-    background-color: antiquewhite;
-  }
-  
-  /* etiqueta de producto */
-  .tag {
-    font-size: 0.9rem;
-    background-color: black;
-    border-radius: 5px;
-    width: 4rem;
-    display: flex;
-    justify-content: center;
-    color: #fff;
-  }
-  
-  /* producto */
-  .product-title {
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  
-  .product-card {
-    background: #fff;
-    display: grid;
-    /* align-items: center; */
-    grid-template-rows: 55% 45%;
-    height: 80%;
-    width: 28%;
-    box-shadow: 10px 10px 25px 0px #3c3c3c;
-  }
-  
-  .product-image {
-    /* border: 2px solid black; */
-    background-image: url("../../public/img/blackcar.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 40px 10px;
-    width: 28rem;
-    height: 66%;
-  }
-  
-  .product-description {
-    background-color: #62c256;
-    color: #fff;
-    padding-left: 20px;
-    margin-top: -67px;
-  }
-  
-  .product-details {
-    display: flex;
-    flex-direction: column;
-    margin-top: -20px;
-  }
-  
-  .product-image img {
-    width: 28rem;
-  }
-  
-  .stars {
-    color: yellow;
-    font-size: 1em;
-  }
-  
-  /* colores */
-  .colors-price {
-    display: flex;
-    align-items: center;
-    width: 70%;
-    justify-content: space-between;
-    margin-top: -15px;
-  }
-  
-  .colors {
-    display: flex;
-    width: 6rem;
-    justify-content: space-between;
-    cursor: pointer;
-  }
-  
-  .red {
-    background: red;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-  }
-  
-  .gray {
-    background: gray;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-  }
-  
-  .black {
-    background: black;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-  }
-  
-  .pricing {
-    display: flex;
-    width: 12rem;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .old-price {
-    font-weight: 100;
-  }
-  
-  /* botones */
-  button {
-    cursor: pointer;
-  }
-  
-  #button {
-    background-color: #000;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  button white-button {
-    background-color: #fff;
-  }
-  
-  .button-text {
-    color: #fff;
-    margin-left: 5px;
-  }
-  
-  .feedback {
-    display: none;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 5px;
-  }
+
+.colors-price{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: flex-start;
+      margin: 0.8em 0em;
+}
+.colors{
+  display: flex;
+  width: 6rem;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-right: 3em;
+}
+.pricing{
+  display: flex;
+  width: 12rem;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+new-price {
+  margin: 20px 0px;
+}
+
+old-price {
+  margin: 21px 0px;
+}
+
+s{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.colors span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  border: 2px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: red;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.black {
+  background-color: black;
+}
+
+.buttons{
+  margin-top: 1em 1em;
+}
+
+#button {
+  background-color: rgb(0, 0, 0);
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  color:white;
+}
+.feedback {
+  display: none;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+}
